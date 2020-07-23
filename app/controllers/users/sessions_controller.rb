@@ -11,10 +11,8 @@ class Users::SessionsController < Devise::SessionsController
   # POST /resource/sign_in
   def create
     @user = User.find_by(email: params[:session][:email])
-    byebug
     if @user
       session[:user_id] = @user.id
-
       render json: @user
     else
       render json: {
