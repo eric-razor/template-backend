@@ -6,4 +6,5 @@ class User < ApplicationRecord
 
   has_many :tickers
   has_many :trackers, through: :tickers
+
 end

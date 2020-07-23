@@ -8,4 +8,4 @@
 
 
 
-eric = User.create!(username:"ericr",password:"password")
+eric = User.create!(email:"ericr@flatironschool.com",password:"password")
